@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 3D Bharat Investment Dashboard
 
-## Getting Started
+A Next.js investment dashboard for curating and evaluating Indian startup and growth-stage opportunities. The project is built with the App Router, Redux Toolkit, Recharts, and mock JSON-backed service layers.
 
-First, run the development server:
+## Architecture
+
+- App routes: app/
+- Shared layout shell: src/components/layout/
+- UI modules: src/components/
+- Data and simulation layer: src/services/
+- Redux state: src/features/
+- Recommendation logic: src/utils/recommendation.js
+- Mock dataset: src/data/
+
+## Data flow
+
+1. The app loads deal and investor data from mock JSON files via simulated API services.
+2. Redux Toolkit slices store the request state, filters, search, sorting, page state, and saved interests.
+3. UI pages read selectors and render derived views.
+4. Saved interests persist in localStorage and restore on refresh.
+5. Recommendation scoring ranks deals based on risk fit, industry match, budget compatibility, and ROI attractiveness.
+
+## Features
+
+- Investor dashboard with KPI cards and charts
+- Deal explorer with debounced search, filters, sort, and pagination
+- Deal detail pages with tabs and ROI/risk analysis
+- Recommendation engine with weighted match scoring
+- My Investments list with add/remove and localStorage persistence
+- Corporate dashboard with trend and distribution charts
+- Dark mode and responsive layout
+
+## Optimization strategies
+
+- useMemo for derived chart and filtered data
+- useCallback for stable event handlers
+- debounced search to reduce unnecessary queries
+- Redux selectors to avoid redundant derived logic
+- paginated deal results to handle large arrays efficiently
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in the browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Submission notes
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This app is intended for local development and Vercel deployment.
+- No API keys are required for the mock data setup.
+- The UI is kept consistent with the existing design and behavior.

@@ -1,0 +1,17 @@
+[
+  {"id":1,"name":"Aarav Capital","budget":120,"preferredIndustry":"Technology","riskPreference":"Medium","minimumROI":18,"maximumInvestment":80,"interests":["AI","Technology","SaaS"]},
+  {"id":2,"name":"Indigo Ventures","budget":90,"preferredIndustry":"Healthcare","riskPreference":"Low","minimumROI":16,"maximumInvestment":60,"interests":["Healthcare","FinTech","Agriculture"]},
+  {"id":3,"name":"Horizon Growth Fund","budget":150,"preferredIndustry":"Renewable Energy","riskPreference":"Medium","minimumROI":17,"maximumInvestment":90,"interests":["Renewable Energy","EV","Technology"]},
+  {"id":4,"name":"Triton Partners","budget":80,"preferredIndustry":"FinTech","riskPreference":"High","minimumROI":22,"maximumInvestment":60,"interests":["FinTech","AI","SaaS"]},
+  {"id":5,"name":"Nectar Investors","budget":110,"preferredIndustry":"EV","riskPreference":"Medium","minimumROI":18,"maximumInvestment":70,"interests":["EV","Logistics","Technology"]},
+  {"id":6,"name":"Saffron Capital","budget":130,"preferredIndustry":"Semiconductor","riskPreference":"High","minimumROI":20,"maximumInvestment":85,"interests":["Semiconductor","AI","Technology"]},
+  {"id":7,"name":"Blue River Fund","budget":100,"preferredIndustry":"Agriculture","riskPreference":"Low","minimumROI":15,"maximumInvestment":50,"interests":["Agriculture","Renewable Energy","Logistics"]},
+  {"id":8,"name":"Oakstone Ventures","budget":95,"preferredIndustry":"SaaS","riskPreference":"Medium","minimumROI":19,"maximumInvestment":65,"interests":["SaaS","FinTech","AI"]},
+  {"id":9,"name":"Meridian Capital","budget":140,"preferredIndustry":"Logistics","riskPreference":"Medium","minimumROI":17,"maximumInvestment":75,"interests":["Logistics","E-commerce","Manufacturing"]},
+  {"id":10,"name":"Verde Asset Group","budget":125,"preferredIndustry":"Renewable Energy","riskPreference":"Low","minimumROI":16,"maximumInvestment":70,"interests":["Renewable Energy","Agriculture","Technology"]},
+  {"id":11,"name":"Catalyst Foundry","budget":105,"preferredIndustry":"AI","riskPreference":"High","minimumROI":23,"maximumInvestment":75,"interests":["AI","Technology","Semiconductor"]},
+  {"id":12,"name":"Atlas Growth Partners","budget":85,"preferredIndustry":"Healthcare","riskPreference":"Medium","minimumROI":18,"maximumInvestment":55,"interests":["Healthcare","SaaS","FinTech"]},
+  {"id":13,"name":"Northstar Equity","budget":160,"preferredIndustry":"Manufacturing","riskPreference":"Low","minimumROI":15,"maximumInvestment":90,"interests":["Manufacturing","Logistics","Renewable Energy"]},
+  {"id":14,"name":"PrimeSphere Capital","budget":118,"preferredIndustry":"E-commerce","riskPreference":"Medium","minimumROI":18,"maximumInvestment":68,"interests":["E-commerce","Logistics","Technology"]},
+  {"id":15,"name":"Summit Ventures","budget":135,"preferredIndustry":"Technology","riskPreference":"High","minimumROI":21,"maximumInvestment":80,"interests":["Technology","AI","FinTech"]}
+]
